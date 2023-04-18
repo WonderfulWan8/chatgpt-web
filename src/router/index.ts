@@ -18,13 +18,16 @@ const routes: RouteRecordRaw[] = [
       },
     ],
   },
-
   {
-    path: '/404',
-    name: '404',
-    component: () => import('@/views/exception/404/index.vue'),
+    path: '/login',
+    name: 'login',
+    component: () => import('@/views/welcome/login.vue'),
   },
-
+  {
+    path: '/register',
+    name: 'register',
+    component: () => import('@/views/welcome/register.vue'),
+  },
   {
     path: '/500',
     name: '500',
